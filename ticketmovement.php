@@ -82,7 +82,7 @@ $myMovement->description = "Ticket/Factura " . $invoiceref;
 // 3. Write down the previous credit
 $myMovement->credit_prev = $myModAdherent->credit;
 // 4. Write down the amount and charge it to adherent credit
-$myMovement->amount = $amount;
+$myMovement->amount = $amount * -1;
 $myModAdherent->credit -= $amount;        
 // 5. Write down the final credit
 $myMovement->credit_final = $myModAdherent->credit;
